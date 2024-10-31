@@ -1,0 +1,37 @@
+/* Đặt box-sizing cho tất cả phần tử */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#chat-window {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 300px;
+    max-width: 90%; /* Giúp tương thích trên màn hình nhỏ */
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 5px; /* Thêm viền bo tròn nếu muốn */
+}
+
+#chat-log {
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#user-input {
+    width: calc(100% - 60px);
+    display: inline-block; /* Căn chỉnh ngang hàng */
+}
+
+#send-button {
+    width: 50px;
+    display: inline-block;
+    vertical-align: top; /* Căn chỉnh với #user-input */
+}

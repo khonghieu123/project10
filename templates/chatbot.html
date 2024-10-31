@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Ngân Sách</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="#">Quản Lý Ngân Sách</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <span class="nav-link" id="chatbot-button" style="cursor: pointer;">ChatBot</span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="chat-window" style="display:none;">
+      <div id="chat-log" role="log" aria-live="polite"></div>
+      <input type="text" id="user-input" placeholder="Nhập câu hỏi của bạn..." aria-label="Nhập câu hỏi">
+      <button id="send-button" aria-label="Gửi câu hỏi">Gửi</button>
+  </div>
+</body>
+</html>
